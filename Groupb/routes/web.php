@@ -13,8 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [\App\Http\Controllers\PagesController::class, 'index']);
+
+Route::get('/allcars', [\App\Http\Controllers\CarrosController::class, 'index']);
+
+Route::get('/car/{car_codigo}', function ($car_codigo) {
+    return view('hally');
 });
 
-Route::get('/allcars', [\App\Http\Controllers\CarsController::class, 'index']);
+
+
