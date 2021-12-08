@@ -13,6 +13,6 @@ class Carros extends Model
 
     public function marca()
     {
-        return $this->hasOne(Marcas::class, "car_mar_codigo", "mar_codigo");
+        return $this->hasOne(Marcas::class, "mar_codigo","car_mar_codigo");
     }
 }

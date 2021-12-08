@@ -101,7 +101,7 @@
         <img src="audiquattro.jpg" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{$carro->car_modelo}}</h5>
-          <p class="card-text">{{$carro->marca->mar_codigo}}</p>
+          <p class="card-text">{{$carro->marca->mar_marca}}</p>
             <div class="">
               <div class="cardbt">
                 <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Ver Detalhes</a>
