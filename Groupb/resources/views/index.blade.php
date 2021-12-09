@@ -40,7 +40,7 @@
             <div class="container-fluid">
 
               
-              <img src="Logohome.png" style="width: 60px ; height: 34px;filter:invert(1)">
+              <img src="{{ URL::asset('/images/Logohome.png') }}" style="width: 60px ; height: 34px;filter:invert(1)">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -86,23 +86,23 @@ sempre customizar o style para ajustar a imagem ao carousel-->
   </div>
   <div class="carousel-inner ">
     <div class="carousel-item active"  data-bs-interval="5000">
-      <img src="FERRARI.jpg" class=" mx-auto d-block "style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 35% 65%;"  alt="...">
+      <img src="{{ URL::asset('/images/FERRARI.jpg') }}" class=" mx-auto d-block "style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 35% 65%;"  alt="...">
       
     </div>
     <div class="carousel-item"  data-bs-interval="5000">
-      <img src="Lambo.jpg"  class=" mx-auto d-block" style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 50% 50%;" alt="...">
+      <img src="{{ URL::asset('/images/Lambo.jpg') }}"  class=" mx-auto d-block" style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 50% 50%;" alt="...">
       
     </div>
     <div class="carousel-item"  data-bs-interval="5000">
-      <img src="gtr4.jpg" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 20% 80%;" alt="...">
+      <img src="{{ URL::asset('/images/gtr4.jpg') }}" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 20% 80%;" alt="...">
       
     </div>
     <div class="carousel-item"  data-bs-interval="5000">
-        <img src="911.jpg" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 40% 60%;" alt="...">
+        <img src="{{ URL::asset('/images/911.jpg') }}" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 40% 60%;" alt="...">
         
       </div>
       <div class="carousel-item"  data-bs-interval="5000">
-        <img src="teste.jpg" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 50% 50%;" alt="...">
+        <img src="{{ URL::asset('/images/teste.jpg') }}" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 50% 50%;" alt="...">
         
       </div>
 
@@ -124,7 +124,7 @@ sempre customizar o style para ajustar a imagem ao carousel-->
             
             <div class="row row-cols-12 m-0 "  >
               <div class="modcard card col-12 col-sm-3 d-flex justify-content-center p-5 ">
-                <img src="ferrari70.jpg" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%;object-fit:cover;object-position: 40% 60% ;" alt="...">
+                <img src="{{ URL::asset('/images/ferrari70.jpg') }}" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%;object-fit:cover;object-position: 40% 60% ;" alt="...">
                
                   
                 <div class="card-body">
@@ -136,7 +136,7 @@ sempre customizar o style para ajustar a imagem ao carousel-->
                 
               </div>
               <div class="modcard card col-12 col-sm-3 d-flex justify-content-center p-5">
-                <img src="Lambo.jpg" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%;object-fit:cover;object-position: 40% 60% ;" alt="...">
+                <img src="{{ URL::asset('/images/Lambo.jpg') }}" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%;object-fit:cover;object-position: 40% 60% ;" alt="...">
                
                  
                 <div class="card-body">
@@ -148,7 +148,7 @@ sempre customizar o style para ajustar a imagem ao carousel-->
                  
               </div>
               <div class="modcard card col-12 col-sm-3 d-flex justify-content-center p-5" >
-                <img src="912.jpg" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%;" alt="...">
+                <img src="{{ URL::asset('/images/912.jpg') }}" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%;" alt="...">
                
                   
                  
@@ -160,7 +160,7 @@ sempre customizar o style para ajustar a imagem ao carousel-->
 
               </div>
               <div class="modcard card col-12 col-sm-3 d-flex justify-content-center p-5" >
-                <img src="lambo70.jpg" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%" alt="...">
+                <img src="{{ URL::asset('/images/lambo70.jpg') }}" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%" alt="...">
                 
                   
                 <div class="card-body">
@@ -273,29 +273,29 @@ sempre customizar o style para ajustar a imagem ao carousel-->
   	<div class="container card mt-5 mb-5 shadow-lg " style="text-align: center;">
   		<p style="text-align: center;" class="h5">Nossas marcas</p>
   <div class="row">
-    <div class="col"><img src="audi.png"></div>
-     <div class="col"><img src="alfa romeo.png"></div>
-      <div class="col"><img src="peugeot.png"></div>
-       <div class="col"><img src="bmw.png"></div>
-        <div class="col"><img src="fiat.png"></div>
+    <div class="col"><img src="{{ URL::asset('/images/audi.png') }}"></div>
+     <div class="col"><img src="{{ URL::asset('/images/alfa romeo.png') }}"></div>
+      <div class="col"><img src="{{ URL::asset('/images/peugeot.png') }}"></div>
+       <div class="col"><img src="{{ URL::asset('/images/bmw.png') }}"></div>
+        <div class="col"><img src="{{ URL::asset('/images/fiat.png') }}"></div>
     <div class="w-100"></div>
-     <div class="col"><img src="mini.png"></div>
-      <div class="col"><img src="dodge.png"></div>
-       <div class="col"><img src="lotus.png"></div>
-        <div class="col"><img src="mazda.png"></div>
-         <div class="col"><img src="renault.png"></div>
+     <div class="col"><img src="{{ URL::asset('/images/mini.png') }}"></div>
+      <div class="col"><img src="{{ URL::asset('/images/dodge.png') }}"></div>
+       <div class="col"><img src="{{ URL::asset('/images/lotus.png') }}"></div>
+        <div class="col"><img src="{{ URL::asset('/images/mazda.png') }}"></div>
+         <div class="col"><img src="{{ URL::asset('/images/renault.png') }}"></div>
     <div class="w-100"></div>
-   	 <div class="col"><img src="toyota.png"></div>
-   	  <div class="col"><img src="chevrolet.png"></div>
-   	   <div class="col"><img src="honda.png"></div>
-   	    <div class="col"><img src="citroen.png"></div>
-   	     <div class="col"><img src="vw.png"></div>
+   	 <div class="col"><img src="{{ URL::asset('/images/toyota.png') }}"></div>
+   	  <div class="col"><img src="{{ URL::asset('/images/chevrolet.png') }}"></div>
+   	   <div class="col"><img src="{{ URL::asset('/images/honda.png') }}"></div>
+   	    <div class="col"><img src="{{ URL::asset('/images/citroen.png') }}"></div>
+   	     <div class="col"><img src="{{ URL::asset('/images/vw.png') }}"></div>
     <div class="w-100"></div>
-     <div class="col"><img src="mercedes.png"></div>
-      <div class="col"><img src="porsche.png"></div>
-       <div class="col"><img src="ferrari.png"></div>
-        <div class="col"><img src="mc.png"></div>
-         <div class="col"><img src="pontiac.png"></div>
+     <div class="col"><img src="{{ URL::asset('/images/mercedes.png') }}"></div>
+      <div class="col"><img src="{{ URL::asset('/images/porsche.png') }}"></div>
+       <div class="col"><img src="{{ URL::asset('/images/ferrari.png') }}"></div>
+        <div class="col"><img src="{{ URL::asset('/images/mc.png') }}"></div>
+         <div class="col"><img src="{{ URL::asset('/images/pontiac.png') }}"></div>
   </div>
 </div>
 </div>

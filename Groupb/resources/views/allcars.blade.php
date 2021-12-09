@@ -89,16 +89,17 @@
 
     
 <!-- Cards demonstrativos-->
+
+<div class="row row-cols-12 m-0"  >
+<div class="mt-3 d-block col-12  col-sm-12 ">
+<div class="row row-cols-1 row-cols-md-3  ">
+
 @if(count($carros) > 1)
 @foreach($carros as $carro)
 
-<div class="row row-cols-12 m-0 "  >
-<div class="mt-3 d-block col-12  col-sm-12 ">
-
-  <div class="row row-cols-1 row-cols-md-3  ">
     <div class="col">
       <div class="card carddemo ">
-        <img src="audiquattro.jpg" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
+        <img src="{{$carro->car_link_imagem}}" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{$carro->car_modelo}}</h5>
           <p class="card-text">{{$carro->marca->mar_marca}}</p>
@@ -110,15 +111,16 @@
         </div>
       </div>
     </div>
-  </div>
-  </div>
-</div>
 
 @endforeach
 
 @else
 <p>Hally</p>
 @endif
+
+        </div>
+        </div>
+        </div>
     	<!-- Footer -->
 <footer class="page-footer font-small blue mt-5 pt-4 pl-5 pr-5" style="background-color: rgb(33,37,41);">
 
