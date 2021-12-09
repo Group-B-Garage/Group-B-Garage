@@ -13,19 +13,8 @@ class CreatePriceColumn extends Migration
      */
     public function up()
     {
-        Schema::create('price_column', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('tb_carros', function (Blueprint $table) {
+            $table->double('car_preco', 10, 2);
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('price_column');
     }
 }

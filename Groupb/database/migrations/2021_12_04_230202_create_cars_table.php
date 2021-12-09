@@ -32,7 +32,7 @@ class CreateCarsTable extends Migration
             $table->increments('car_codigo');
             $table->string('car_modelo', 255);
             $table->unsignedInteger('car_ano');
-            $table->double('car_cilindrada', );
+            $table->unsignedInteger('car_cilindrada');
             $table->unsignedInteger('car_kmrodados');
             $table->unsignedInteger('car_potencia');
             $table->unsignedInteger('car_mar_codigo');
