@@ -50,22 +50,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Categories
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item " href="#">New</a></li>
-                      <li><a class="dropdown-item" href="#">Used</a></li>
-                      <li><a class="dropdown-item" href="#">Launch</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Others</a></li>
-                    </ul>
+                    <a class="nav-link" href="/allcars">Catalogo Completo</a>
                   </li>
                 </ul>
               </div>
@@ -173,101 +158,37 @@ sempre customizar o style para ajustar a imagem ao carousel-->
 
 
 <!-- Cards demonstrativos-->
-<div class="mt-5 d-block col-12  col-sm-12 ">
+@if(count($carros) > 1)
+@foreach($carros as $carro)
 
-<div class="row row-cols-1 row-cols-md-3  ">
-  <div class="col">
-    <div class="card carddemo">
-      <img src="ferrari70.jpg" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Nome do carro</h5>
-        <p class="card-text">Descrição.</p>
-        
-        <div class="">
-            <div class="cardbt">
-                    <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Detalhes</a>
-                </div>
-          </div>
+@if ($carro->car_codigo < 15)
+
+    <div class="col">
+      <div class="card carddemo ">
+        <img src="{{$carro->car_link_imagem}}" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{$carro->marca->mar_marca}} {{$carro->car_modelo}}</h5>
+          <p class="card-text">R${{$carro->car_preco}}</p>
+            <div class="">
+              <div class="cardbt">
+                <a href="/car/{{$carro->car_codigo}}" class="btn btn-warning  w-100" role="button" aria-pressed="true">Ver Detalhes</a>
+                  </div>
+            </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card  carddemo" >
-      <img src="teste.jpg" class="card-img-top"  style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Nome do carro</h5>
-        <p class="card-text">Descrição.</p>
-        
-          <div class="">
-            <div class="cardbt">
-                    <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Detalhes</a>
-                </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card carddemo ">
-      <img src="gtr4.jpg" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Nome do carro</h5>
-        <p class="card-text">Descrição.</p>
-    
-          <div class="">
-            <div class="cardbt">
-                    <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Detalhes</a>
-                </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card carddemo">
-      <img src="teste.jpg" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Nome do carro</h5>
-        <p class="card-text">Descrição.</p>
-      
-          <div class="">
-            <div class="cardbt">
-                    <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Detalhes</a>
-                </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col">
-    <div class="card carddemo" >
-      <img src="Lambo.jpg" class="card-img-top"  style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Nome do carro</h5>
-        <p class="card-text">Descrição.</p>
-       
-          <div class="">
-            <div class="cardbt">
-                    <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Detalhes</a>
-                </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card carddemo ">
-      <img src="911.jpg" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Nome do carro</h5>
-        <p class="card-text">Descrição.</p>
-        
-          <div class="">
-            <div class="cardbt">
-              <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Detalhes</a>
-                </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  </div>
+
+    @endif
+
+@endforeach
+
+@else
+<p>Hally</p>
+@endif
+
+        </div>
+        </div>
+        </div>
 
 
   	<div class="container card mt-5 mb-5 shadow-lg " style="text-align: center;">

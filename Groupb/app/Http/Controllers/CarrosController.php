@@ -19,6 +19,12 @@ class CarrosController extends Controller
         return view('allcars',compact('carros'));
     }
 
+    public function indexhome()
+    {
+        $carros = Carros::all();
+        return view('index',compact('carros'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

@@ -53,25 +53,10 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="http://127.0.0.1:8000">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Categories
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item " href="#">New</a></li>
-                      <li><a class="dropdown-item" href="#">Used</a></li>
-                      <li><a class="dropdown-item" href="#">Launch</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Others</a></li>
-                    </ul>
+                    <a class="nav-link active" aria-current="page" href="#">Catalogo Completo</a>
                   </li>
                 </ul>
               </div>
@@ -101,11 +86,11 @@
       <div class="card carddemo ">
         <img src="{{$carro->car_link_imagem}}" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
         <div class="card-body">
-          <h5 class="card-title">{{$carro->car_modelo}}</h5>
-          <p class="card-text">{{$carro->marca->mar_marca}}</p>
+          <h5 class="card-title">{{$carro->marca->mar_marca}} {{$carro->car_modelo}}</h5>
+          <p class="card-text">R${{$carro->car_preco}}</p>
             <div class="">
               <div class="cardbt">
-                <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Ver Detalhes</a>
+                <a href="http://127.0.0.1:8000/car/{{$carro->car_codigo}}" class="btn btn-warning  w-100" role="button" aria-pressed="true">Ver Detalhes</a>
                   </div>
             </div>
         </div>

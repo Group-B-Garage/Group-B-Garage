@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [\App\Http\Controllers\PagesController::class, 'index']);
+Route::get('/', [\App\Http\Controllers\CarrosController::class, 'indexhome']);
 
 Route::get('/allcars', [\App\Http\Controllers\CarrosController::class, 'index']);
 
