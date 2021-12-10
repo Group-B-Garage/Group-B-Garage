@@ -3,6 +3,7 @@
       <link href="gtr4.jpg" rel="shortcut icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <meta charset="utf-8">
+        <title>GB Garage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
        
@@ -37,7 +38,7 @@
 
         </style>
         </head>
-    <title>Catalogo</title>
+    <title>paginacarro</title>
        
     <body class="w-100">
 
@@ -46,7 +47,7 @@
             <div class="container-fluid">
 
               
-              <img src="Logohome.png" style="width: 60px ; height: 34px;filter: invert(1);">
+              <img src="fotos/Logohome.png" style="width: 60px ; height: 34px;filter: invert(1);">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -56,7 +57,10 @@
                     <a class="nav-link" href="http://127.0.0.1:8000">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Catalogo Completo</a>
+                    <a class="nav-link" href="http://127.0.0.1:8000/allcars">Catalogo Completo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/car/allcars">{{$carros->marca->mar_marca}} {{$carros->car_modelo}}</a>
                   </li>
                 </ul>
               </div>
@@ -65,49 +69,88 @@
 <!--Fim da navbar-->
 
 
-<!--Nossos carros-->
-<div class="mt-5 w-100 d-flex justify-content-center text-center" >
- 
-<h3 style="color: #999;"> Nossos Veiculos </h3>
+    
+<!-- Card demonstrativo-->
+<div class="row row-cols-12 m-0 "  >
+<div class="mt-3 d-block col-12  col-sm-12 ">
 
+    <div class="card mb-3" style="max-width: 100%; height: 100%;">
+  <div class="row g-0 ">
+    <div class="col-md-6 p-3">
+      <img src="{{$carros->car_link_imagem}}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-6" style="justify-content: center; text-align: center;">
+      <div class="card-body">
+        <h5 class="card-title">{{$carros->marca->mar_marca}} {{$carros->car_modelo}} - R${{$carros->car_preco}}</h5>
+        <p class="card-text">{{$carros->car_descrição}}</p>
+
+        <p>
+  <a class="btn btn-dark" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" data-bs-toggle="collapse" href="#descricao" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Detalhes técnicos
+  </a>
+  
+</p>
+
+<!--Collapse s-->
+<div class="collapse" id="descricao">
+  <div class="card card-body">
+    <table class="table table-hover">
+      
+      <tbody>
+        <tr>
+          <th scope="row">Marca</th>
+          <td>{{$carros->marca->mar_marca}}</td>
+         
+        </tr>
+        <tr>
+          <th scope="row">Ano</th>
+          <td>{{$carros->car_ano}}</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">Potencia</th>
+          <td>{{$carros->car_potencia}}</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">Cilindrada</th>
+          <td >{{$carros->car_cilindrada}}</td>
+         
+        </tr>
+        <tr>
+          <th scope="row">Cor</th>
+          <td> {{$carros->cor->cor_cor}}</td>
+         
+        </tr>
+        <tr>
+          <th scope="row">Categoria</th>
+          <td >{{$carros->categoria->cat_categoria}}</td>
+         
+        </tr>
+        <tr>
+          <th scope="row">KM rodados</th>
+          <td >{{$carros->car_kmrodados}}</td>
+         
+        </tr>
+
+       
+      </tbody>
+    </table>
+  </div>
 </div>
 
-    
-<!-- Cards demonstrativos-->
 
-<div class="row row-cols-12 m-0"  >
-<div class="mt-3 d-block col-12  col-sm-12 ">
-<div class="row row-cols-1 row-cols-md-3  ">
 
-@if(count($carros) > 1)
-@foreach($carros as $carro)
-
-    <div class="col">
-      <div class="card carddemo ">
-        <img src="{{$carro->car_link_imagem}}" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{$carro->marca->mar_marca}} {{$carro->car_modelo}}</h5>
-          <p class="card-text">R${{$carro->car_preco}}</p>
-            <div class="">
-              <div class="cardbt">
-                <a href="http://127.0.0.1:8000/car/{{$carro->car_codigo}}" class="btn btn-warning  w-100" role="button" aria-pressed="true">Ver Detalhes</a>
-                  </div>
-            </div>
-        </div>
       </div>
     </div>
 
-@endforeach
+  </div>
+</div>
 
-@else
-<p>Hally</p>
-@endif
-
-        </div>
-        </div>
-        </div>
+  </div>
+</div>
     	<!-- Footer -->
-<footer class="page-footer font-small blue mt-5 pt-4 pl-5 pr-5" style="background-color: rgb(33,37,41);">
+<footer class="page-footer font-small blue mt-4 pt-4 pl-5 pr-5" style="background-color: rgb(33,37,41);">
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
@@ -189,7 +232,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3" style="color:white;">© 2021 Copyright:
-    <a class="link-light linktext" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    <a class="link-light linktext" href="https://mdbootstrap.com/"> GroupB Garage</a>
   </div>
   <!-- Copyright -->
 

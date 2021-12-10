@@ -1,4 +1,3 @@
-
 <html>
     <head>
       <link href="gtr4.jpg" rel="shortcut icon" >
@@ -41,7 +40,7 @@
             <div class="container-fluid">
 
               
-              <img src="fotos/Logohome.png" style="width: 60px ; height: 34px;filter:invert(1)">
+              <img src="{{ URL::asset('/images/Logohome.png') }}" style="width: 110px ; height: 40px;">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -51,22 +50,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Categories
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item " href="#">New</a></li>
-                      <li><a class="dropdown-item" href="#">Used</a></li>
-                      <li><a class="dropdown-item" href="#">Launch</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Others</a></li>
-                    </ul>
+                    <a class="nav-link" href="/allcars">Catalogo Completo</a>
                   </li>
                 </ul>
               </div>
@@ -82,28 +66,18 @@ sempre customizar o style para ajustar a imagem ao carousel-->
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
   </div>
   <div class="carousel-inner ">
     <div class="carousel-item active"  data-bs-interval="5000">
-      <img src="fotos/FERRARI.jpg" class=" mx-auto d-block "style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 35% 65%;"  alt="...">
+      <img src="{{ URL::asset('/images/banner.png') }}"  class=" mx-auto d-block" style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 50% 50%;" alt="...">
       
     </div>
     <div class="carousel-item"  data-bs-interval="5000">
-      <img src="fotos/Lambo.jpg"  class=" mx-auto d-block" style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 50% 50%;" alt="...">
-      
-    </div>
-    <div class="carousel-item"  data-bs-interval="5000">
-      <img src="fotos/gtr4.jpg" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 20% 80%;" alt="...">
-      
-    </div>
-    <div class="carousel-item"  data-bs-interval="5000">
-        <img src="fotos/911.jpg" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 40% 60%;" alt="...">
+        <img src="{{ URL::asset('/images/911.jpg') }}" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 40% 60%;" alt="...">
         
       </div>
       <div class="carousel-item"  data-bs-interval="5000">
-        <img src="fotos/teste.jpg" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 50% 50%;" alt="...">
+        <img src="{{ URL::asset('/images/teste.jpg') }}" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 50% 50%;" alt="...">
         
       </div>
 
@@ -125,178 +99,110 @@ sempre customizar o style para ajustar a imagem ao carousel-->
             
             <div class="row row-cols-12 m-0 "  >
               <div class="modcard card col-12 col-sm-3 d-flex justify-content-center p-5 ">
-                <img src="fotos/ferrari70.jpg" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%;object-fit:cover;object-position: 40% 60% ;" alt="...">
+                <img src="{{ URL::asset('/images/ferrari70.jpg') }}" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%;object-fit:cover;object-position: 40% 60% ;" alt="...">
                
                   
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h5 class="card-title">Conheça a GroupB Garage</h5>
+                  <p class="card-text">Uma concessionária especializada em carros clássicos</p>
                 </div>
 
                 
               </div>
               <div class="modcard card col-12 col-sm-3 d-flex justify-content-center p-5">
-                <img src="fotos/Lambo.jpg" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%;object-fit:cover;object-position: 40% 60% ;" alt="...">
+                <img src="{{ URL::asset('/images/153391i.jpg') }}" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%;object-fit:cover;object-position: 40% 60% ;" alt="...">
                
                  
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h5 class="card-title">Carros que marcaram época, em um só lugar</h5>
+                  <p class="card-text">A GroupB Garage oferece uma ampla seleção de carros íconicos em ótimo estado</p>
                 </div>
 
                  
               </div>
               <div class="modcard card col-12 col-sm-3 d-flex justify-content-center p-5" >
-                <img src="fotos/912.jpg" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%;" alt="...">
+                <img src="{{ URL::asset('/images/912.jpg') }}" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%;" alt="...">
                
                   
                  
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 class="card-title">Procurando Vender?</h5>
+                      <p class="card-text">Traga seu carro clássico para uma avaliação na GroupB</p>
                     </div>
 
               </div>
               <div class="modcard card col-12 col-sm-3 d-flex justify-content-center p-5" >
-                <img src="fotos/lambo70.jpg" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%" alt="...">
+                <img src="{{ URL::asset('/images/lambo70.jpg') }}" class="shadow-lg" style="height:200px;width: 200px;border-radius:50%" alt="...">
                 
                   
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h5 class="card-title">Marque sua visita</h5>
+                  <p class="card-text">Estamos na Avenida Elder Batista, Bairro das Palmeiras, Porto Alegre</p>
                 </div>
 
                 </div>
 
 
 <!-- Cards demonstrativos-->
-<div class="mt-5 d-block col-12  col-sm-12 ">
+@if(count($carros) > 1)
+@foreach($carros as $carro)
 
-<div class="row row-cols-1 row-cols-md-3  ">
-  <div class="col">
-    <div class="card carddemo">
-      <img src="fotos/ferrari70.jpg" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Nome do carro</h5>
-        <p class="card-text">Descrição.</p>
-        
-        <div class="">
-            <div class="cardbt">
-                    <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Detalhes</a>
-                </div>
-          </div>
+@if ($carro->car_codigo < 15)
+
+    <div class="col">
+      <div class="card carddemo ">
+        <img src="{{$carro->car_link_imagem}}" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{$carro->marca->mar_marca}} {{$carro->car_modelo}}</h5>
+          <p class="card-text">R${{$carro->car_preco}}</p>
+            <div class="">
+              <div class="cardbt">
+                <a href="/car/{{$carro->car_codigo}}" class="btn btn-warning  w-100" role="button" aria-pressed="true">Ver Detalhes</a>
+                  </div>
+            </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card  carddemo" >
-      <img src="fotos/teste.jpg" class="card-img-top"  style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Nome do carro</h5>
-        <p class="card-text">Descrição.</p>
-        
-          <div class="">
-            <div class="cardbt">
-                    <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Detalhes</a>
-                </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card carddemo ">
-      <img src="fotos/gtr4.jpg" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Nome do carro</h5>
-        <p class="card-text">Descrição.</p>
-    
-          <div class="">
-            <div class="cardbt">
-                    <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Detalhes</a>
-                </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card carddemo">
-      <img src="fotos/teste.jpg" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Nome do carro</h5>
-        <p class="card-text">Descrição.</p>
-      
-          <div class="">
-            <div class="cardbt">
-                    <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Detalhes</a>
-                </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col">
-    <div class="card carddemo" >
-      <img src="fotos/Lambo.jpg" class="card-img-top"  style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Nome do carro</h5>
-        <p class="card-text">Descrição.</p>
-       
-          <div class="">
-            <div class="cardbt">
-                    <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Detalhes</a>
-                </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card carddemo ">
-      <img src="fotos/911.jpg" class="card-img-top" style="max-width:100%;width:100%;height:200px;object-fit:cover;object-position: 35% 65%;" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Nome do carro</h5>
-        <p class="card-text">Descrição.</p>
-        
-          <div class="">
-            <div class="cardbt">
-              <a href="#" class="btn btn-warning  w-100" role="button" aria-pressed="true">Detalhes</a>
-                </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  </div>
+
+    @endif
+
+@endforeach
+
+@else
+<p>Não temos carros disponíveis</p>
+@endif
+
+        </div>
+        </div>
+        </div>
 
 
   	<div class="container card mt-5 mb-5 shadow-lg " style="text-align: center;">
   		<p style="text-align: center;" class="h5">Nossas marcas</p>
   <div class="row">
-    <div class="col"><img src="fotos/audi.png"></div>
-     <div class="col"><img src="fotos/alfa romeo.png"></div>
-      <div class="col"><img src="fotos/peugeot.png"></div>
-       <div class="col"><img src="fotos/bmw.png"></div>
-        <div class="col"><img src="fotos/fiat.png"></div>
+    <div class="col"><img src="{{ URL::asset('/images/audi.png') }}"></div>
+     <div class="col"><img src="{{ URL::asset('/images/alfa romeo.png') }}"></div>
+      <div class="col"><img src="{{ URL::asset('/images/peugeot.png') }}"></div>
+       <div class="col"><img src="{{ URL::asset('/images/bmw.png') }}"></div>
+        <div class="col"><img src="{{ URL::asset('/images/fiat.png') }}"></div>
     <div class="w-100"></div>
-     <div class="col"><img src="fotos/mini.png"></div>
-      <div class="col"><img src="fotos/dodge.png"></div>
-       <div class="col"><img src="fotos/lotus.png"></div>
-        <div class="col"><img src="fotos/mazda.png"></div>
-         <div class="col"><img src="fotos/renault.png"></div>
+     <div class="col"><img src="{{ URL::asset('/images/mini.png') }}"></div>
+      <div class="col"><img src="{{ URL::asset('/images/dodge.png') }}"></div>
+       <div class="col"><img src="{{ URL::asset('/images/lotus.png') }}"></div>
+        <div class="col"><img src="{{ URL::asset('/images/mazda.png') }}"></div>
+         <div class="col"><img src="{{ URL::asset('/images/renault.png') }}"></div>
     <div class="w-100"></div>
-   	 <div class="col"><img src="fotos/toyota.png"></div>
-   	  <div class="col"><img src="fotos/chevrolet.png"></div>
-   	   <div class="col"><img src="fotos/honda.png"></div>
-   	    <div class="col"><img src="fotos/citroen.png"></div>
-   	     <div class="col"><img src="fotos/vw.png"></div>
+   	 <div class="col"><img src="{{ URL::asset('/images/toyota.png') }}"></div>
+   	  <div class="col"><img src="{{ URL::asset('/images/chevrolet.png') }}"></div>
+   	   <div class="col"><img src="{{ URL::asset('/images/honda.png') }}"></div>
+   	    <div class="col"><img src="{{ URL::asset('/images/citroen.png') }}"></div>
+   	     <div class="col"><img src="{{ URL::asset('/images/vw.png') }}"></div>
     <div class="w-100"></div>
-     <div class="col"><img src="fotos/mercedes.png"></div>
-      <div class="col"><img src="fotos/porsche.png"></div>
-       <div class="col"><img src="fotos/ferrari.png"></div>
-        <div class="col"><img src="fotos/mc.png"></div>
-         <div class="col"><img src="fotos/pontiac.png"></div>
+     <div class="col"><img src="{{ URL::asset('/images/mercedes.png') }}"></div>
+      <div class="col"><img src="{{ URL::asset('/images/porsche.png') }}"></div>
+       <div class="col"><img src="{{ URL::asset('/images/ferrari.png') }}"></div>
+        <div class="col"><img src="{{ URL::asset('/images/mc.png') }}"></div>
+         <div class="col"><img src="{{ URL::asset('/images/pontiac.png') }}"></div>
   </div>
 </div>
 </div>
@@ -385,7 +291,7 @@ sempre customizar o style para ajustar a imagem ao carousel-->
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3" style="color:white;">© 2021 Copyright:
-    <a class="link-light linktext" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    <a class="link-light linktext" href="https://mdbootstrap.com/"> GroupB Garage</a>
   </div>
   <!-- Copyright -->
 
