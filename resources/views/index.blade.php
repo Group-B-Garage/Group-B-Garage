@@ -147,7 +147,7 @@ sempre customizar o style para ajustar a imagem ao carousel-->
 @if(count($carros) > 1)
 @foreach($carros as $carro)
 
-@if ($carro->car_codigo < 15)
+@if ($carro->car_codigo < 6)
 
     <div class="col">
       <div class="card carddemo ">

@@ -77,7 +77,7 @@
 
 <div class="row row-cols-12 m-0"  >
 <div class="mt-3 d-block col-12  col-sm-12 ">
-<div class="row row-cols-1 row-cols-md-3  ">
+<div class="row row-cols-1 row-cols-md-4  ">
 
 @if(count($carros) > 1)
 @foreach($carros as $carro)
