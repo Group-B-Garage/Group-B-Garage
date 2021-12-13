@@ -54,13 +54,13 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:8000">Home</a>
+                    <a class="nav-link" href="https://groupbgarage.herokuapp.com">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:8000/allcars">Catalogo Completo</a>
+                    <a class="nav-link" href="https://groupbgarage.herokuapp.com/allcars">Catalogo Completo</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/car/allcars">{{$carros->marca->mar_marca}} {{$carros->car_modelo}}</a>
+                    <a class="nav-link active" aria-current="page" href="#">{{$carros->marca->mar_marca}} {{$carros->car_modelo}}</a>
                   </li>
                 </ul>
               </div>
