@@ -1,7 +1,7 @@
 <html>
     <head>
       <link href="gtr4.jpg" rel="shortcut icon" >
-      <title>GB Garage</title>
+      <title>Group B Garage</title>
       <meta name="author" content="Group-B-Garage">
           <meta name="description" content="Sua melhor concessionária de carros antigos.">
 

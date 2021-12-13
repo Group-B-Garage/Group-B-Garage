@@ -37,7 +37,7 @@
 
         </style>
         </head>
-    <title>Catalogo</title>
+    <title>Catalogo Completo - Group B Garage</title>
        
     <body class="w-100">
 
