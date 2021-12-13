@@ -17,7 +17,7 @@ class CarrosSeeder extends Seeder
     public function run()
     {
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => '911',
             'car_ano' => '1980',
             'car_cilindrada' => '3000',
@@ -34,7 +34,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Giulia GTV',
             'car_ano' => '1965',
             'car_cilindrada' => '1500',
@@ -52,7 +52,7 @@ class CarrosSeeder extends Seeder
         ]);
 
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => '512 Testarossa',
             'car_ano' => '1987',
             'car_cilindrada' => '5000',
@@ -69,7 +69,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Quattro',
             'car_ano' => '1984',
             'car_cilindrada' => '2000',
@@ -86,7 +86,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '3',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Opala SS',
             'car_ano' => '1975',
             'car_cilindrada' => '4100',
@@ -103,7 +103,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => '037 Stradale',
             'car_ano' => '1983',
             'car_cilindrada' => '2000',
@@ -120,7 +120,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Countach',
             'car_ano' => '1988',
             'car_cilindrada' => '6200',
@@ -137,7 +137,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Spider',
             'car_ano' => '1967',
             'car_cilindrada' => '1500',
@@ -154,7 +154,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => '2000GT',
             'car_ano' => '1968',
             'car_cilindrada' => '2000',
@@ -171,7 +171,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => '944',
             'car_ano' => '1989',
             'car_cilindrada' => '3000',
@@ -188,7 +188,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'F355',
             'car_ano' => '1995',
             'car_cilindrada' => '3500',
@@ -205,7 +205,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Impreza WRX Type R',
             'car_ano' => '1998',
             'car_cilindrada' => '2000',
@@ -222,7 +222,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '3',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Delta Integrale',
             'car_ano' => '1992',
             'car_cilindrada' => '2000',
@@ -239,7 +239,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '3',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Lancer Evolution VI TME',
             'car_ano' => '1999',
             'car_cilindrada' => '2000',
@@ -256,7 +256,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '3',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'M3 E30',
             'car_ano' => '1988',
             'car_cilindrada' => '2500',
@@ -273,7 +273,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Alfetta GTV6',
             'car_ano' => '1984',
             'car_cilindrada' => '2500',
@@ -290,7 +290,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Fusca',
             'car_ano' => '1967',
             'car_cilindrada' => '1200',
@@ -307,7 +307,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => '500',
             'car_ano' => '1968',
             'car_cilindrada' => '600',
@@ -324,7 +324,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Corvette C4',
             'car_ano' => '1988',
             'car_cilindrada' => '6000',
@@ -341,7 +341,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => '190E Cosworth',
             'car_ano' => '1988',
             'car_cilindrada' => '3500',
@@ -358,7 +358,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'RX-7 FC',
             'car_ano' => '1990',
             'car_cilindrada' => '1300',
@@ -375,7 +375,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Mustang GT',
             'car_ano' => '1965',
             'car_cilindrada' => '4000',
@@ -392,7 +392,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Esprit',
             'car_ano' => '1987',
             'car_cilindrada' => '4000',
@@ -409,7 +409,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Corolla Levin AE86',
             'car_ano' => '1985',
             'car_cilindrada' => '1500',
@@ -426,7 +426,7 @@ class CarrosSeeder extends Seeder
             'car_tra_codigo' => '1',
         ]);
 
-        DB::table('tb_carros')->insertGetId([
+        DB::table('tb_carros')->insert([
             'car_modelo' => 'Firebird',
             'car_ano' => '1987',
             'car_cilindrada' => '5000',

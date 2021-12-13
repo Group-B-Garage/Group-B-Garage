@@ -8,7 +8,7 @@ class Posicoes_Motores extends Model
 {
     protected $table = "tb_posicao_motor";
 
-    public $primaryKey = 'pos_codigo';
+    protected $primaryKey = 'pos_codigo';
 
     protected $fillable = [
         'pos_posicao_motor'
