@@ -51,10 +51,10 @@ class CreateCarsTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('tb_carros');
         Schema::dropIfExists('tb_marcas');
         Schema::dropIfExists('tb_cores');
         Schema::dropIfExists('tb_categorias');
-        Schema::dropIfExists('tb_carros');
 
     }
 }
