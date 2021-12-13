@@ -9,7 +9,7 @@ class Cores extends Model
 {
     protected $table = "tb_cores";
 
-    public $primaryKey = 'cor_codigo';
+    protected $primaryKey = 'cor_codigo';
 
     protected $fillable = [
         'cor_cor'

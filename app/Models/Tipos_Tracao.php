@@ -8,7 +8,7 @@ class Tipos_Tracao extends Model
 {
     protected $table = "tb_tração";
 
-    public $primaryKey = 'tra_codigo';
+    protected $primaryKey = 'tra_codigo';
 
     protected $fillable = [
         'tra_tração'

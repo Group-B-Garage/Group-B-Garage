@@ -14,7 +14,7 @@ class Carros extends Model
 {
     protected $table = "tb_carros";
 
-    public $primaryKey = 'car_codigo';
+    protected $primaryKey = 'car_codigo';
 
     public function marca()
     {

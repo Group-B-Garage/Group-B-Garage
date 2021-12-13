@@ -8,7 +8,7 @@ class Motores extends Model
 {
     protected $table = "tb_tipo_motor";
 
-    public $primaryKey = 'tip_codigo';
+    protected $primaryKey = 'tip_codigo';
 
     protected $fillable = [
         'tip_tipo_motor'

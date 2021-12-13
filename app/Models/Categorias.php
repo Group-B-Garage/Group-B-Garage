@@ -9,7 +9,7 @@ class Categorias extends Model
 {
     protected $table = "tb_categorias";
 
-    public $primaryKey = 'cat_codigo';
+    protected $primaryKey = 'cat_codigo';
 
     protected $fillable = [
         'cat_categoria'

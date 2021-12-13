@@ -8,7 +8,7 @@ class Marcas extends Model
 {
     protected $table = "tb_marcas";
 
-    public $primaryKey = 'mar_codigo';
+    protected $primaryKey = 'mar_codigo';
 
     protected $fillable = [
         'mar_marca'
