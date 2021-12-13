@@ -37,5 +37,8 @@ class CreateDrivetrainTables extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('tb_tipo_motor');
+        Schema::dropIfExists('tb_posicao_motor');
+        Schema::dropIfExists('tb_tração');
     }
 }
