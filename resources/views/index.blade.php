@@ -40,7 +40,7 @@
             <div class="container-fluid">
 
               
-              <img src="{{ URL::asset('/images/Logohome.png') }}" style="width: 110px ; height: 40px;">
+              <img src="{{ URL::asset('/images/Logohome.png') }}" style="width: 120px ; height: 40px;">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -65,19 +65,14 @@ sempre customizar o style para ajustar a imagem ao carousel-->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner ">
     <div class="carousel-item active"  data-bs-interval="5000">
-      <img src="{{ URL::asset('/images/banner.png') }}"  class=" mx-auto d-block" style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 50% 50%;" alt="...">
+      <img src="{{ URL::asset('/images/banner_1.png') }}"  class=" mx-auto d-block" style="max-width:100%;width:100%;height:500px;object-fit:cover;object-position: 50% 50%;" alt="...">
       
     </div>
     <div class="carousel-item"  data-bs-interval="5000">
-        <img src="{{ URL::asset('/images/911.jpg') }}" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 40% 60%;" alt="...">
-        
-      </div>
-      <div class="carousel-item"  data-bs-interval="5000">
-        <img src="{{ URL::asset('/images/teste.jpg') }}" class=" mx-auto d-block " style="max-width:100%;width:100%;height:400px;object-fit:cover;object-position: 50% 50%;" alt="...">
+        <img src="{{ URL::asset('/images/banner_2.png') }}" class=" mx-auto d-block " style="max-width:100%;width:100%;height:500px;object-fit:cover;object-position: 40% 60%;" alt="...">
         
       </div>
 
@@ -103,7 +98,7 @@ sempre customizar o style para ajustar a imagem ao carousel-->
                
                   
                 <div class="card-body">
-                  <h5 class="card-title">Conheça a GroupB Garage</h5>
+                  <h5 class="card-title">Conheça a Group B Garage</h5>
                   <p class="card-text">Uma concessionária especializada em carros clássicos</p>
                 </div>
 
@@ -115,7 +110,7 @@ sempre customizar o style para ajustar a imagem ao carousel-->
                  
                 <div class="card-body">
                   <h5 class="card-title">Carros que marcaram época, em um só lugar</h5>
-                  <p class="card-text">A GroupB Garage oferece uma ampla seleção de carros íconicos em ótimo estado</p>
+                  <p class="card-text">De super esportivos clássicos icônicos, à lendas do rally, na Group B você encontra o carro dos seus sonhos </p>
                 </div>
 
                  
@@ -127,7 +122,7 @@ sempre customizar o style para ajustar a imagem ao carousel-->
                  
                     <div class="card-body">
                       <h5 class="card-title">Procurando Vender?</h5>
-                      <p class="card-text">Traga seu carro clássico para uma avaliação na GroupB</p>
+                      <p class="card-text">Traga seu carro clássico para uma avaliação na Group B Garage</p>
                     </div>
 
               </div>
@@ -137,7 +132,7 @@ sempre customizar o style para ajustar a imagem ao carousel-->
                   
                 <div class="card-body">
                   <h5 class="card-title">Marque sua visita</h5>
-                  <p class="card-text">Estamos na Avenida Elder Batista, Bairro das Palmeiras, Porto Alegre</p>
+                  <p class="card-text">Estamos na Avenida Elder Batista, Bairro das Palmeiras, Natal-RN</p>
                 </div>
 
                 </div>

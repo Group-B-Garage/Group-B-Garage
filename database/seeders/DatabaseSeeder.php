@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        //$this->call(CarrosFKSeeder::class);
+        $this->call(CarrosFKSeeder::class);
         $this->call(CarrosSeeder::class);
         // \App\Models\User::factory(10)->create();
     }

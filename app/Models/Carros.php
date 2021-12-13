@@ -4,6 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Marcas;
+use App\Models\Cores;
+use App\Models\Categorias;
+use App\Models\Motores;
+use App\Models\Posicoes_Motores;
+use App\Models\Tipos_Tracao;
 
 class Carros extends Model
 {
@@ -24,5 +29,20 @@ class Carros extends Model
     public function categoria()
     {
         return $this->hasOne(Categorias::class, "cat_codigo","car_cat_codigo");
+    }
+
+    public function motor()
+    {
+        return $this->hasOne(Motores::class, "tip_codigo","car_tip_codigo");
+    }
+
+    public function posicao_motor()
+    {
+        return $this->hasOne(Posicoes_Motores::class, "pos_codigo","car_pos_codigo");
+    }
+
+    public function tracao()
+    {
+        return $this->hasOne(Tipos_Tracao::class, "tra_codigo","car_tra_codigo");
     }
 }

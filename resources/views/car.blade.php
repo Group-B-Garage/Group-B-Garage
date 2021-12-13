@@ -47,7 +47,7 @@
             <div class="container-fluid">
 
               
-              <img src="{{ URL::asset('/images/Logohome.png') }}" style="width: 110px ; height: 40px;filter: invert(1);">
+              <img src="{{ URL::asset('/images/Logohome.png') }}" style="width: 120px ; height: 40px;">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -108,8 +108,13 @@
           
         </tr>
         <tr>
+          <th scope="row">Cor</th>
+          <td> {{$carros->cor->cor_cor}}</td>
+         
+        </tr>
+        <tr>
           <th scope="row">Potencia</th>
-          <td>{{$carros->car_potencia}}</td>
+          <td>{{$carros->car_potencia}} cavalos</td>
           
         </tr>
         <tr>
@@ -118,8 +123,18 @@
          
         </tr>
         <tr>
-          <th scope="row">Cor</th>
-          <td> {{$carros->cor->cor_cor}}</td>
+          <th scope="row">Tipo de Motor</th>
+          <td> {{$carros->motor->tip_tipo_motor}}</td>
+         
+        </tr>
+        <tr>
+          <th scope="row">Posição do motor</th>
+          <td> {{$carros->posicao_motor->pos_posicao_motor}}</td>
+         
+        </tr>
+        <tr>
+          <th scope="row">Tração</th>
+          <td> {{$carros->tracao->tra_tração}}</td>
          
         </tr>
         <tr>

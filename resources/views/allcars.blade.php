@@ -46,7 +46,7 @@
             <div class="container-fluid">
 
               
-              <img src="{{ URL::asset('/images/Logohome.png') }}" style="width: 110px ; height: 40px;">
+              <img src="{{ URL::asset('/images/Logohome.png') }}" style="width: 120px ; height: 40px;">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
