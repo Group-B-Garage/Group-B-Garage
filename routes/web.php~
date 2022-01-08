@@ -8,7 +8,3 @@ Route::get('/allcars', [\App\Http\Controllers\CarrosController::class, 'index'])
 
 Route::get('/car/{car_codigo}', [\App\Http\Controllers\CarrosController::class, 'show']);
 
-Route::get('/login', function () {
-    return view('login');
-});
-
