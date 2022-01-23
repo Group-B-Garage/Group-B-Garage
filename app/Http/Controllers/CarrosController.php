@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Carros;
 use App\Models\Marcas;
+use App\Models\Cores;
+use App\Models\Categorias;
+use App\Models\Motores;
+use App\Models\Posicoes_Motores;
+use App\Models\Tipos_Tracao;
 
 class CarrosController extends Controller
 {
@@ -17,6 +22,17 @@ class CarrosController extends Controller
     {
         $carros = Carros::all();
         return view('allcars',compact('carros'));
+    }
+
+    public function cadastro()
+    {
+        return view('Cadastro');
+    }
+
+    public function dash()
+    {
+        $carros = Carros::all();
+        return view('dash',compact('carros'));
     }
 
     public function indexhome()
@@ -32,7 +48,13 @@ class CarrosController extends Controller
      */
     public function create()
     {
-        //
+        $marcas = Marcas::all();
+        $cores = Cores::all();
+        $categorias = Categorias::all();
+        $motores = Motores::all();
+        $posicoes = Posicoes_Motores::all();
+        $tracoes = Tipos_Tracao::all();
+        return view('create', compact('marcas', 'cores', 'categorias', 'motores', 'posicoes', 'tracoes'));
     }
 
     /**
@@ -43,7 +65,9 @@ class CarrosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $post = Post::create($request->all());
+
+        return 'hally';
     }
 
     /**

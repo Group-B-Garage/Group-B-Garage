@@ -11,11 +11,27 @@
   </head>
   <body>
 
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container-fluid d-flex justify-content-center">
-    <span class="navbar-brand mb-0 h1 ">Cadastrar Veículo</span>
-  </div>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <img src="{{ URL::asset('/images/Logohome.png') }}" style="width: 120px ; height: 40px;">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://groupbgarage.herokuapp.com/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Veiculos Cadastrados</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Atualizar dados do veiculo</a>
+                  </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
 
 
 <div class="card m-5 p-3 shadow-lg  " style="min-height: 200px;
