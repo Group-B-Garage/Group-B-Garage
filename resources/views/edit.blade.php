@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -37,13 +36,14 @@
           <div class="card m-5 p-3 shadow-lg  " style="min-height: 200px;
 ">
 
-<form action="{{ route('car.store') }}" method="POST">
+<form action="/update/{{$carros->car_codigo}}" method="POST">
 
 @csrf
+@method('PUT')
 <div class="row g-3">
     <div class="col-sm-6">
       <label for="car_modelo" class="form-label">Modelo do carro</label>
-      <input type="text" class="form-control" id="modelo" name="car_modelo" placeholder="" value="" required>
+      <input type="text" class="form-control" id="modelo" name="car_modelo" placeholder="" value="{{$carros->car_modelo}}" required>
       <div class="invalid-feedback">
         Insira um valor válido
       </div>
@@ -51,7 +51,7 @@
 
     <div class="col-sm-6">
       <label for="car_ano" class="form-label">Ano do modelo</label>
-      <input type="number" class="form-control" id="####" name="car_ano" placeholder="" value="" required>
+      <input type="number" class="form-control" id="####" name="car_ano" placeholder="" value="{{$carros->car_ano}}" required>
       <div class="invalid-feedback">
         ?????????
       </div>
@@ -59,7 +59,7 @@
 
     <div class="col-12">
       <label for="car_descrição" class="form-label">Descrição do carro</label>
-        <input type="text" class="form-control" id="####" name="car_descrição" placeholder="" required>
+        <input type="text" class="form-control" id="####" name="car_descrição" placeholder="" value="{{$carros->car_descrição}}" required>
       <div class="invalid-feedback">
          ????????
         </div>
@@ -67,7 +67,7 @@
 
     <div class="col-12">
       <label for="car_link_imagem" class="form-label">Link da imagem do carro</label>
-        <input type="text" class="form-control" id="####" name="car_link_imagem" placeholder="" required>
+        <input type="text" class="form-control" id="####" name="car_link_imagem" placeholder="" value="{{$carros->car_link_imagem}}" required>
       <div class="invalid-feedback">
          ????????
         </div>
@@ -75,7 +75,7 @@
 
     <div class="col-sm-6">
       <label for="car_preco" class="form-label">Preço do carro</label>
-      <input type="number" class="form-control" id="modelo" name="car_preco" placeholder="" value="" required>
+      <input type="number" class="form-control" id="modelo" name="car_preco" placeholder="" value="{{$carros->car_preco}}" required>
       <div class="invalid-feedback">
         Insira um valor válido
       </div>
@@ -83,7 +83,7 @@
 
     <div class="col-sm-6">
       <label for="car_kmrodados" class="form-label">Quilometros rodados</label>
-      <input type="number" class="form-control" id="####" name="car_kmrodados" placeholder="" value="" required>
+      <input type="number" class="form-control" id="####" name="car_kmrodados" placeholder="" value="{{$carros->car_kmrodados}}" required>
       <div class="invalid-feedback">
         ?????????
       </div>
@@ -91,7 +91,7 @@
 
     <div class="col-sm-6">
       <label for="car_potencia" class="form-label">Potência</label>
-      <input type="number" class="form-control" id="modelo" name="car_potencia" placeholder="" value="" required>
+      <input type="number" class="form-control" id="modelo" name="car_potencia" placeholder="" value="{{$carros->car_potencia}}" required>
       <div class="invalid-feedback">
         Insira um valor válido
       </div>
@@ -99,7 +99,7 @@
 
     <div class="col-sm-6">
       <label for="car_cilindrada" class="form-label">Cilindrada</label>
-      <input type="number" class="form-control" id="####" name="car_cilindrada" placeholder="" value="" required>
+      <input type="number" class="form-control" id="####" name="car_cilindrada" placeholder="" value="{{$carros->car_cilindrada}}" required>
       <div class="invalid-feedback">
         ?????????
       </div>
@@ -181,11 +181,19 @@
       </div>
     </div>
 
-    <button class="w-100 btn btn-dark btn-md mt-3" type="submit">Salvar</button>
-  
-  </div>
+    <div class= "text-center">
+    <button class="w-50 btn btn-dark btn-md mt-3" type="submit">Salvar</button>
 
   </form> 
+
+  <form action="/car/{{$carros->car_codigo}}" method="POST">
+                    @method('delete')
+                    @csrf
+                    <button type="submit" class="w-50 btn btn-danger btn-md mt-3">Retirar do site</button>
+                    </form>
+        </div>
+  
+  </div>
     
 </div>
 

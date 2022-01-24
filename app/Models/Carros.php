@@ -16,7 +16,9 @@ class Carros extends Model
 
     protected $primaryKey = 'car_codigo';
 
-    protected $fillable = ['car_modelo', 'car_ano', 'car_preco', 'car_cilindrada', 'car_kmrodados', 'car_potencia', 'car_descrição', 'car_link_imagem', 'car_mar_codigo', 'car_cor_codigo', 'car_cat_codigo', 'car_tipo_codigo', 'car_pos_codigo', 'car_tra_codigo'];
+    public $timestamps = false;
+
+    protected $guarded = [];
 
     public function marca()
     {

@@ -32,7 +32,7 @@ class CarrosController extends Controller
     public function dash()
     {
         $carros = Carros::all();
-        return view('dash',compact('carros'));
+        return view('cardatabase',compact('carros'));
     }
 
     public function indexhome()
@@ -65,9 +65,26 @@ class CarrosController extends Controller
      */
     public function store(Request $request)
     {
-        $post = Post::create($request->all());
+        $carro = new Carros;
 
-        return 'hally';
+        $carro->car_modelo = $request->car_modelo;
+        $carro->car_ano = $request->car_ano;
+        $carro->car_descrição = $request->car_descrição;
+        $carro->car_link_imagem = $request->car_link_imagem;
+        $carro->car_preco = $request->car_preco;
+        $carro->car_kmrodados = $request->car_kmrodados;
+        $carro->car_potencia = $request->car_potencia;
+        $carro->car_cilindrada = $request->car_cilindrada;
+        $carro->car_mar_codigo = $request->car_mar_codigo;
+        $carro->car_cor_codigo = $request->car_cor_codigo;
+        $carro->car_cat_codigo = $request->car_cat_codigo;
+        $carro->car_tip_codigo = $request->car_tip_codigo;
+        $carro->car_pos_codigo = $request->car_pos_codigo;
+        $carro->car_tra_codigo = $request->car_tra_codigo;
+
+        $carro->save();
+
+        return redirect('/dashboard');
     }
 
     /**
@@ -88,9 +105,18 @@ class CarrosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($car_codigo)
     {
-        //
+        $carros = Carros::find($car_codigo);
+
+        $marcas = Marcas::all();
+        $cores = Cores::all();
+        $categorias = Categorias::all();
+        $motores = Motores::all();
+        $posicoes = Posicoes_Motores::all();
+        $tracoes = Tipos_Tracao::all();
+
+        return view('edit', compact('carros', 'marcas', 'cores', 'categorias', 'motores', 'posicoes', 'tracoes'));
     }
 
     /**
@@ -100,9 +126,11 @@ class CarrosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $car_codigo)
     {
-        //
+        $carros = Carros::find($request->car_codigo)->update($request->all());
+
+        return redirect('/dashboard')->with('msg', 'Dados atualizados com sucesso');
     }
 
     /**
@@ -111,8 +139,10 @@ class CarrosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($car_codigo)
     {
-        //
+        Carros::findOrFail($car_codigo)->delete();
+
+        return redirect('/dashboard')->with('msg', 'Carro retirado do site');
     }
 }
