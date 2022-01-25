@@ -52,6 +52,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="/allcars">Catalogo Completo</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                  </li>
                 </ul>
               </div>
             </div>

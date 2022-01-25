@@ -54,10 +54,10 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="https://groupbgarage.herokuapp.com">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://groupbgarage.herokuapp.com/allcars">Catalogo Completo</a>
+                    <a class="nav-link" href="/allcars">Catalogo Completo</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">{{$carros->marca->mar_marca}} {{$carros->car_modelo}}</a>
