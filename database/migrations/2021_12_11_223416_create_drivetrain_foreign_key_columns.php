@@ -30,6 +30,5 @@ class CreateDrivetrainForeignKeyColumns extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('drivetrain_foreign_key_columns');
     }
 }
